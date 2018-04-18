@@ -1,0 +1,325 @@
+/* 头部 */
+
+#header{
+    background-color: #1C1C1C;
+    min-width: 980px;
+    position: relative;
+}
+
+#header .header{
+    width: 980px;
+    margin: 0 auto;
+    height: 45px;
+}
+
+#header .logo{
+    line-height: 40px;
+}
+
+#header .logo img{
+	height: 38px;
+}
+
+#header .searchBox{
+    margin-top: 8px;
+    margin-left: 130px;
+    width: 266px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#header .searchInput{
+    outline: 0;
+    border: 0;
+    width: 230px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    color: #999;
+    text-indent: 8px;
+    background-color: transparent;
+}
+
+#header .searchBtn{
+    width: 36px;
+    height: 30px;
+    display: inline-block;
+    background: url(../image/header/srch_btn.png) no-repeat 0 0;
+    position: absolute;
+    top:0;
+}
+
+#header .searchBtn:hover{
+    background-position: -40px 0;
+}
+
+#header .state{
+    font-size: 14px;
+}
+
+#header .state a{
+    color: #e5e5e5;
+}
+
+#header .state ul{
+    height: 45px;
+    line-height: 45px;
+}
+
+#header .state>.userList{
+    width: 80px;
+    text-align: right;
+}
+
+#header .state .user{
+    display: inline-block;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#header .state ul>li{
+    float: left;
+    padding:0 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+#header .state ul>li:hover a.user,#header .state ul>li:hover a.login{
+    color: #6cc900;
+}
+
+#header .state ul>li:hover i.slide{
+    border-top-color: #6cc900;
+}
+
+#header .state ul>li>i{
+    position: absolute;
+    right: 0;
+    top: 22px;
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: 5px dashed transparent;
+    border-top: 5px solid #e4e4e4;
+    overflow: hidden;
+}
+
+#header .state ul>li.move{
+    padding-right:1px;
+}
+
+#header .state .isLogin li{
+    padding: 0 20px;
+}
+
+#header .state .userMsg{
+    position: absolute;
+    width: 350px;
+    background:url("../image/header/userBg.jpg") no-repeat 0 -15px;
+    top:45px;
+    left: -62px;
+    box-shadow: 1px 1px 1px 1px #bbb;
+    z-index: 999;
+    cursor: default;
+}
+
+#header .state b{
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: 10px dashed transparent;
+    overflow: hidden;
+}
+
+#header .state .userMsg>b{
+    left: 130px;
+    top: -19px;
+    border-bottom: 10px solid #E5F1FD;
+}
+
+#header .state li.userList{
+	width:80px;
+}
+
+#header .state .history>b{
+    border-bottom: 10px solid #fff;
+    right: 40px;
+    top: -20px;
+}
+
+#header .state .userMsg>div{
+    padding:6px 20px;
+}
+
+#header .userHead a{
+    color: #333;
+}
+
+.userMsg>.userHead .avatar{
+    margin-right: 15px;
+}
+
+.userMsg .avatar img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+
+#header .userMsg a:hover{
+    color: #6cc900;
+}
+
+#header .userName>a{
+    max-width: 140px;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#header .userName>i{
+    display: inline-block;
+    background: url(../image/header/qyv-rank.png) no-repeat;
+    width: 22px;
+    height: 18px;
+}
+
+#header .userName>i.nVip{
+    background-position: -210px -65px;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+#header .vipBox>div>a,#header .vipBox>div{
+    color: #00c13b;
+}
+
+#header .vipBox{
+    background-color: rgba(255,255,255,0.8);
+    width: 169px;
+    height: 44px;
+    margin: 0 auto;
+    padding: 6px 8px;
+    border-radius: 6px;
+    line-height: 22px;
+    /*transition: transform .3s;*/
+}
+
+#header .vipBox:hover{
+    transform: scale(1.05);
+}
+
+#header .vipBox>div>span{
+    float: right;
+    height: 18px;
+    line-height: 18px;
+    border:1px solid #00c13b;
+    color: #00c13b;
+    border-radius: 20px;
+    padding: 0 6px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#header .vipBox>div>span:hover{
+    background-color: #00c13b;
+    color: #fff;
+}
+
+#header .vipBox>p{
+    font-size: 12px;
+    color: #999;
+}
+
+#header .state .userMsg>div.userCenter{
+    padding: 0 20px;
+    line-height: 38px;
+    margin-top: 10px;
+}
+
+#header .state .userMsg>div.userCenter a{
+    display: block;
+    color: #333;
+}
+
+#header .state .userMsg>div.userCenter a:hover{
+    color: #6cc900;
+}
+
+#header .history{
+    position: absolute;
+    border: 1px solid #ccc;
+    top: 45px; 
+    width: 298px;
+    height: 298px;
+    left: -202px;
+    background: #fff;
+    z-index: 999;
+}
+
+#header .history>.playHistory>p{
+    margin: 107px auto;
+    text-align: center;
+    color: #999;
+}
+
+#header .history>.more{
+    position: absolute;
+    border-top: 1px solid #ccc;
+    background-color: #F2F2F2;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+}
+
+#header .history>.more:hover{
+    background-color: #ddd;
+}
+
+#header li:hover a{
+    color: #6cc900;
+}
+
+#header .history>.more>a{
+    display: block;
+    color: #333;
+}
+
+#header .history>.more>a:hover{
+    color: #6cc900;
+}
+
+#header .playHistory li{
+    width: 258px;
+    font-size: 12px;
+    line-height: 36px;
+}
+
+#header .playHistory li a{
+    color: #666;
+    max-width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#header .playHistory li span{
+    color: #aaa;
+}
+
+#header .playHistory li a:hover{
+    color: #6cc900;
+}

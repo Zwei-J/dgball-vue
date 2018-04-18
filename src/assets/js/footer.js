@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$.ajax({
+		type:"get",
+		url:"footer.html",
+		success:function(html){
+			//console.log(html);字符串
+			$("#footer").html(html);
+		}
+	})
+})

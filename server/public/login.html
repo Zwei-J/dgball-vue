@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>用户登录</h1>
+  <form action="#" method="post">
+    用户名 <input type="text" name="uname" id="uname"/> <br>
+    密码 <input type="password" name="upwd" id="upwd"/> <br>
+      <input type="button" value="提交" id="btn">
+  </form>
+  <script src="jquery.js"></script>
+  <script>
+      $("#btn").click(function(){
+        var u = $("#uname").val();
+        var p = $("#upwd").val();
+        $.ajax({
+          type:"POST",
+          url:"/login",
+          data:{uname:u,upwd:p},
+          success:function(data){
+            if(data.code>0){
+              alert(data.msg);
+              location.href = "booklist.html";
+            }else{
+              alert(data.msg);
+            }
+          },
+          error:function(){
+            alert("网络故障请检查");
+          }
+        });
+
+      });
+
+
+  </script>
+</body>
+</html>

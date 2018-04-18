@@ -1,0 +1,57 @@
+/* 公用 */
+
+body{
+    font-family: Microsoft YaHei;
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: middle;
+    border: 0;
+}
+
+body,ul,ol,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover{
+    color:#6cc900;
+}
+
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.runoff:before{
+    content: " ";
+    display: table;
+}
+
+.lf{
+    float: left;
+}
+
+.rt{
+    float: right;
+}
+
+.container{
+    width: 980px;
+    margin: 10px auto;
+}
+
+.regBody{
+    background: #EFF5EF;
+}
